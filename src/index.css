@@ -1,0 +1,22 @@
+
+body {
+    margin: 0;
+    font-family: 'Roboto',
+    sans-serif, "Averta CY";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    font-family: "Averta CY", Roboto, sans-serif;
+
+}
+
+/*@font-face {*/
+/*  font-family: "Averta CY";*/
+/*  src: local('AvertaDemoPE-ExtraBold.otf');*/
+/*}*/
