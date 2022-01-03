@@ -40,11 +40,6 @@ const Icons = {
 }
 
 const ContainerStyle = styled.div`
-
-  
- 
-  
-  
   .features-title {
     width: fit-content;
     display: flex;
@@ -384,7 +379,6 @@ function Features() {
         <ContainerStyle>
             <ModalFeatures showModal={showModal} setShowModal={setShowModal}/>
             <div id="features">
-
 
                     <h1 className="features-title">
                         Системийн боломжууд
