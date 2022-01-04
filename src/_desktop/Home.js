@@ -19,13 +19,13 @@ function  Home() {
             <Solutions/>
             <Features/>
             <Industries/>
-            <MessengerCustomerChat
-                pageId="331581003847973"
-                appId="613554456622921"
-                themeColor={'#8753F0'}
-                height={4}
-                width={4}
-            />,
+            {/*<MessengerCustomerChat*/}
+            {/*    pageId="331581003847973"*/}
+            {/*    appId="613554456622921"*/}
+            {/*    themeColor={'#8753F0'}*/}
+            {/*    height={4}*/}
+            {/*    width={4}*/}
+            {/*/>,*/}
 
             <Footer/>
 
