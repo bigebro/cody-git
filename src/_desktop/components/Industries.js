@@ -200,7 +200,7 @@ const ContainerStyle = styled.div`
   color: rgb(30, 32, 48);
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   margin-left: -5px;
 }
@@ -241,14 +241,14 @@ const ContainerStyle = styled.div`
   transition: all 0.2s ease-in-out 0s;
 }
 
-//.button button.active  span.icon:after {
+// .button button.active  span.icon:after {
 //  width: 100%;
 //  height: 100%;
 //  border-radius: 0px;
 //  background-color: rgb(136, 85, 241);
-//}
-
-//.buttons button:focus span.icon {
+// }
+//
+// .buttons button:focus span.icon {
 //  border-radius: 8.5px;
 //  background-color: rgb(136, 85, 241);
 //  transition: all 0.2s ease-in-out 0s;
@@ -257,9 +257,9 @@ const ContainerStyle = styled.div`
 //    filter: brightness(0) invert(1);
 //  }
 //
-//}
-
-//.item-wrapper {
+// }
+//
+// .item-wrapper {
 //  display: flex;
 //  align-items: center;
 //  border: none;
@@ -267,14 +267,14 @@ const ContainerStyle = styled.div`
 //  background-color: white;
 //
 //  &:hover, &:active {
-//color:rgb(136,85, 241);
+// color:rgb(136,85, 241);
 //    transition-duration: 0.5s;
 //  }
 //  :focus {
 //    color: #8855F1;
 //  }
-//  
-//}
+//
+// }
 .scrollbar-thumb {
   height: 5px;
   border-radius: 100px;
@@ -387,6 +387,10 @@ ol, ul {
 
 
 }
+
+.industry-menus  {
+    padding-left: 0.4rem;
+}
 `;
 
 
@@ -447,144 +451,6 @@ function Industries() {
                         {/*menu-section*/}
                         <div className="scroll industries-menus">
                             <div className="buttons">
-                                {/*           <button type="button" className="menu-item">*/}
-
-                                {/*       <span className="icon">*/}
-                                {/*           <img src={tech}/>*/}
-                                {/*       </span>*/}
-                                {/*               <span className="text">*/}
-                                {/*         Технологи*/}
-                                {/*       </span>*/}
-                                {/*           </button>*/}
-                                {/*           <button type="button" className="menu-item">*/}
-                                {/*       <span className="icon">*/}
-                                {/*           <img src={clothes}/>*/}
-                                {/*       </span>*/}
-                                {/*               <span className="text">*/}
-                                {/*         Хувцас, загвар*/}
-                                {/*       </span>*/}
-                                {/*           </button>*/}
-                                {/*           <button type="button" className="menu-item">*/}
-                                {/*       <span className="icon">*/}
-                                {/*           <img src={home}/>*/}
-                                {/*       </span>*/}
-                                {/*               <span className="text">*/}
-                                {/*           Гэр ахуй*/}
-                                {/*       </span>*/}
-                                {/*           </button>*/}
-                                {/*           <button type="button" className="menu-item">*/}
-                                {/*       <span className="icon">*/}
-                                {/*           <img src={music}/>*/}
-                                {/*       </span>*/}
-                                {/*               <span className="text">*/}
-                                {/*           Дуу, хөгжим*/}
-                                {/*       </span>*/}
-                                {/*           </button>*/}
-                                {/*           <button type="button" className="menu-item">*/}
-                                {/*       <span className="icon">*/}
-                                {/*           <img src={brand}/>*/}
-                                {/*       </span>*/}
-                                {/*               <span className="text">*/}
-                                {/*           Брэндинг*/}
-                                {/*       </span>*/}
-                                {/*           </button>*/}
-                                {/*           <button type="button" className="menu-item">*/}
-                                {/*       <span className="icon">*/}
-                                {/*           <img src={wallet}/>*/}
-                                {/*       </span>*/}
-                                {/*               <span className="text">*/}
-                                {/*          Цахим хэтэвч*/}
-                                {/*       </span>*/}
-                                {/*           </button>*/}
-                                {/*           <button type="button" className="menu-item">*/}
-                                {/*       <span className="icon">*/}
-                                {/*           <img src={travel}/>*/}
-                                {/*       </span>*/}
-                                {/*               <span className="text">*/}
-                                {/*      Аялал, жуулчлал*/}
-                                {/*            </span>*/}
-                                {/*           </button>*/}
-                                {/*           <button type="button" className="menu-item">*/}
-                                {/*       <span className="icon">*/}
-                                {/*           <img src={event}/>*/}
-                                {/*       </span>*/}
-                                {/*               <span className="text">*/}
-                                {/*Эвэнт, тасалбар*/}
-                                {/*       </span>*/}
-                                {/*           </button>*/}
-                                {/*           <button type="button" className="menu-item">*/}
-                                {/*       <span className="icon">*/}
-                                {/*           <img src={media}/>*/}
-                                {/*       </span>*/}
-                                {/*               <span className="text">*/}
-                                {/*Медиа*/}
-                                {/*       </span>*/}
-                                {/*           </button>*/}
-                                {/*           <button type="button" className="menu-item">*/}
-                                {/*       <span className="icon">*/}
-                                {/*           <img src={pharmacy}/>*/}
-                                {/*       </span>*/}
-                                {/*               <span className="text">*/}
-                                {/*  Эмийн сан*/}
-                                {/*       </span>*/}
-                                {/*           </button>*/}
-                                {/*           <button type="button" className="menu-item">*/}
-                                {/*       <span className="icon">*/}
-                                {/*           <img src={grocerystore}/>*/}
-                                {/*       </span>*/}
-                                {/*               <span className="text">*/}
-                                {/*  Хүнсний дэлгүүр*/}
-                                {/*       </span>*/}
-                                {/*           </button>*/}
-                                {/*           <button type="button" className="menu-item">*/}
-                                {/*       <span className="icon">*/}
-                                {/*           <img src={coupon}/>*/}
-                                {/*       </span>*/}
-                                {/*               <span className="text">*/}
-                                {/*    Купон & Ваучер*/}
-                                {/*       </span>*/}
-                                {/*           </button>*/}
-                                {/*           <button type="button" className="menu-item">*/}
-                                {/*       <span className="icon">*/}
-                                {/*           <img src={jewelry}/>*/}
-                                {/*       </span>*/}
-                                {/*               <span className="text">*/}
-                                {/*   Үнэт эдлэл*/}
-                                {/*       </span>*/}
-                                {/*           </button>*/}
-                                {/*           <button type="button" className="menu-item">*/}
-                                {/*       <span className="icon">*/}
-                                {/*           <img src={flight}/>*/}
-                                {/*       </span>*/}
-                                {/*               <span className="text">*/}
-                                {/*     Нислэг*/}
-                                {/*       </span>*/}
-                                {/*           </button>*/}
-                                {/*           <button type="button" className="menu-item">*/}
-                                {/*       <span className="icon">*/}
-                                {/*           <img src={furniture}/>*/}
-                                {/*       </span>*/}
-                                {/*               <span className="text">*/}
-                                {/*           Тавилга*/}
-                                {/*       </span>*/}
-                                {/*           </button>*/}
-                                {/*           <button type="button" className="menu-item">*/}
-                                {/*       <span className="icon">*/}
-                                {/*           <img src={child}/>*/}
-                                {/*       </span>*/}
-                                {/*               <span className="text">*/}
-                                {/*      Хүүхэд*/}
-                                {/*       </span>*/}
-                                {/*           </button>*/}
-                                {/*           <button type="button" className="menu-item">*/}
-                                {/*       <span className="icon">*/}
-                                {/*           <img src={beauty}/>*/}
-                                {/*       </span>*/}
-                                {/*               <span className="text">*/}
-                                {/* Гоо, сайхан*/}
-                                {/*       </span>*/}
-                                {/*           </button>*/}
-
                                 <ul className="industry-menus">
                                     {Icons.map((item, i) => {
                                         const isCurrent = swiper ? swiper.realIndex ===i:false;
