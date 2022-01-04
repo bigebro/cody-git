@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React, {useRef} from "react"
 import styled from "styled-components";
 import email from "../image/email.svg"
 import background1 from "../image/background1.svg"
@@ -6,6 +6,14 @@ import background2 from "../image/background2.png"
 import background3 from "../image/background3.svg"
 import instagram from "../image/instagram.svg"
 import facebook from "../image/facebook.svg"
+import Career from "../components/Career"
+import Webinar from "../components/Webinar"
+import {
+    Routes,
+    Route,
+    Link, BrowserRouter
+} from "react-router-dom";
+
 
 const ContainerStyle = styled.div`
   #footer {
@@ -267,8 +275,8 @@ function Footer() {
                     </h4>
                     <form className="">
                         <input name="email" placeholder="Таны имэйл" type="text"
-                               className="email-input form-control" value="" />
-                        <button type="submit" aria-label="mail" ></button>
+                               className="email-input form-control" value=""/>
+                        <button type="submit" aria-label="mail"></button>
                     </form>
                     <div className="socials"></div>
 
@@ -299,27 +307,38 @@ function Footer() {
                             </div>
                             <div className="footer-col">
                                 <h4>БИДНИЙ ТУХАЙ</h4>
-                                <ul>
-                                    <li>
-                                        <a href="">Танилцуулга</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Үйлчилгээний төрөл</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Хамтрагч байгууллага</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Холбоо барих</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://cody.mn/career" target="_blank" rel="noopener">Ажлын байр</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://cody.mn/webinar">Вэб үйлчилгээний сургалт</a>
-                                    </li>
-                                </ul>
+                                <BrowserRouter>
+                                    <ul>
+                                        <li>
+                                            <a href="">Танилцуулга</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Үйлчилгээний төрөл</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Хамтрагч байгууллага</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Холбоо барих</a>
+                                        </li>
 
+                                        <li>
+                                            <Link to="/career">Ажлын байр</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/webinar">Вэб үйлчилгээний сургалт</Link>
+                                        </li>
+
+                                    </ul>
+                                    <Routes>
+                                        <Route path="/career" element={<Career/>}/>
+
+
+                                        <Route path="/webinar" element={<Webinar/>}/>
+
+
+                                    </Routes>
+                                </BrowserRouter>
                             </div>
                             <div className="footer-col">
                                 <h4>ХОЛБОО БАРИХ</h4>
@@ -396,11 +415,12 @@ function Footer() {
                                 <p>the luxury you deserve</p>
                             </div>
                             <div className="footer-col">
-                                <a href="https://michelamazonka.shoppy.mn/" target="_blank" rel="noopener">Micheal&Amazonka</a>
+                                <a href="https://michelamazonka.shoppy.mn/" target="_blank"
+                                   rel="noopener">Micheal&Amazonka</a>
                                 <p>Фейшн</p>
                             </div>
                             <div className="footer-col">
-                                <a href="https://ubpassport.mn/"target="_blank" rel="noopener">UB passport</a>
+                                <a href="https://ubpassport.mn/" target="_blank" rel="noopener">UB passport</a>
                                 <p>Лайфстайл</p>
                             </div>
                             <div className="footer-col">
@@ -452,7 +472,8 @@ function Footer() {
                                 <p>хүүхдийн</p>
                             </div>
                             <div className="footer-col">
-                                <a href="https://gobikhangaimebel.shoppy.mn" target={"_blank"} rel={"noopener"}>Gobi khangai</a>
+                                <a href="https://gobikhangaimebel.shoppy.mn" target={"_blank"} rel={"noopener"}>Gobi
+                                    khangai</a>
                                 <p>тавилга</p>
                             </div>
                             <div className="footer-col">
@@ -472,7 +493,8 @@ function Footer() {
                                 <p>коньяк, виски, дарс</p>
                             </div>
                             <div className="footer-col">
-                                <a href="https://naturerepublic.mn" target={"_blank"} rel={"noopener"}>Nature republic</a>
+                                <a href="https://naturerepublic.mn" target={"_blank"} rel={"noopener"}>Nature
+                                    republic</a>
                                 <p>арьс арчилгаа</p>
                             </div>
                             <div className="footer-col">

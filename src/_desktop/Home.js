@@ -28,9 +28,7 @@ function  Home() {
                 pageId="331581003847973"
                 appId="613554456622921"
                 themeColor={'#8753F0'}
-                size="<small>"
-
-
+                style={{width:"10px"}}
             />,
 
             <Footer/>
