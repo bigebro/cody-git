@@ -10,8 +10,8 @@ import Footer from "./components/Footer";
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 const ContainerComp = styled.div`
 
-.body.plugin svg {
-width:4px;
+.plugin svg {
+width:20px;
 }   
 `;
 
