@@ -7,6 +7,10 @@ import Solutions from "./components/Solutions";
 import Features from "./components/Features";
 import Industries from "./components/Industries";
 import Footer from "./components/Footer";
+import React from 'react';
+
+
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 const ContainerComp = styled.div`
 `;
 
@@ -19,6 +23,10 @@ function  Home() {
             <Features/>
             <Industries/>
             <Footer/>
+            <MessengerCustomerChat
+                pageId="331581003847973"
+                appId="613554456622921"
+            />,
         </ContainerComp>
 
 

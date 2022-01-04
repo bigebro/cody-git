@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useCallback } from 'react';
+import React, { useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
 import { useSpring, animated } from 'react-spring';
