@@ -10,9 +10,7 @@ import Footer from "./components/Footer";
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 const ContainerComp = styled.div`
 
-.plugin svg {
-width:20px;
-}   
+
 `;
 
 function  Home() {
@@ -27,7 +25,7 @@ function  Home() {
                 pageId="331581003847973"
                 appId="613554456622921"
                 themeColor={'#8753F0'}
-                style={{"width":"20px"}}
+                height={'40px'}
             />,
 
             <Footer/>
