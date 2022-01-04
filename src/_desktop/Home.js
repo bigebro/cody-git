@@ -13,7 +13,10 @@ const ContainerComp = styled.div`
 
 `;
 
+
+
 function  Home() {
+
     return (
         <ContainerComp>
             <Header/>
@@ -25,7 +28,9 @@ function  Home() {
                 pageId="331581003847973"
                 appId="613554456622921"
                 themeColor={'#8753F0'}
-                size='small'
+                size="<small>"
+
+
             />,
 
             <Footer/>
