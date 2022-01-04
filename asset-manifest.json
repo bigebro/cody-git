@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/cody-git/static/css/main.b34ce1dc.chunk.css",
-    "main.js": "/cody-git/static/js/main.e26b3517.chunk.js",
-    "main.js.map": "/cody-git/static/js/main.e26b3517.chunk.js.map",
+    "main.js": "/cody-git/static/js/main.8d0fbb1d.chunk.js",
+    "main.js.map": "/cody-git/static/js/main.8d0fbb1d.chunk.js.map",
     "runtime-main.js": "/cody-git/static/js/runtime-main.40f66d57.js",
     "runtime-main.js.map": "/cody-git/static/js/runtime-main.40f66d57.js.map",
     "static/css/2.c703d722.chunk.css": "/cody-git/static/css/2.c703d722.chunk.css",
-    "static/js/2.cfc3a6f8.chunk.js": "/cody-git/static/js/2.cfc3a6f8.chunk.js",
-    "static/js/2.cfc3a6f8.chunk.js.map": "/cody-git/static/js/2.cfc3a6f8.chunk.js.map",
+    "static/js/2.efc5634e.chunk.js": "/cody-git/static/js/2.efc5634e.chunk.js",
+    "static/js/2.efc5634e.chunk.js.map": "/cody-git/static/js/2.efc5634e.chunk.js.map",
     "index.html": "/cody-git/index.html",
     "static/css/2.c703d722.chunk.css.map": "/cody-git/static/css/2.c703d722.chunk.css.map",
     "static/css/main.b34ce1dc.chunk.css.map": "/cody-git/static/css/main.b34ce1dc.chunk.css.map",
-    "static/js/2.cfc3a6f8.chunk.js.LICENSE.txt": "/cody-git/static/js/2.cfc3a6f8.chunk.js.LICENSE.txt",
+    "static/js/2.efc5634e.chunk.js.LICENSE.txt": "/cody-git/static/js/2.efc5634e.chunk.js.LICENSE.txt",
     "static/media/AvertaCY.css": "/cody-git/static/media/AvertaCY-Semibold.b459078f.eot",
     "static/media/CONVERSE10.f6130b6d.webp": "/cody-git/static/media/CONVERSE10.f6130b6d.webp",
     "static/media/Industries.83912c6a.svg": "/cody-git/static/media/Industries.83912c6a.svg",
@@ -110,8 +110,8 @@
   "entrypoints": [
     "static/js/runtime-main.40f66d57.js",
     "static/css/2.c703d722.chunk.css",
-    "static/js/2.cfc3a6f8.chunk.js",
+    "static/js/2.efc5634e.chunk.js",
     "static/css/main.b34ce1dc.chunk.css",
-    "static/js/main.e26b3517.chunk.js"
+    "static/js/main.8d0fbb1d.chunk.js"
   ]
 }
