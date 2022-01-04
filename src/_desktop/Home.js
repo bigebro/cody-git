@@ -9,6 +9,10 @@ import Industries from "./components/Industries";
 import Footer from "./components/Footer";
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 const ContainerComp = styled.div`
+
+.body.plugin svg {
+width:4px;
+}   
 `;
 
 function  Home() {
