@@ -7,7 +7,7 @@ import Solutions from "./components/Solutions";
 import Features from "./components/Features";
 import Industries from "./components/Industries";
 import Footer from "./components/Footer";
-import MessengerCustomerChat from 'react-messenger-customer-chat';
+import MessengerChat from 'react-messenger-customer-chat';
 
 const ContainerComp = styled.div`
 
@@ -25,10 +25,11 @@ function  Home() {
             <Solutions/>
             <Features/>
             <Industries/>
-            <MessengerCustomerChat
+            <MessengerChat
                 pageId="331581003847973"
                 appId="613554456622921"
                 themeColor={'#8753F0'}
+                height={20}
             />,
 
 
