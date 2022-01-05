@@ -20,3 +20,7 @@ code {
 /*  font-family: "Averta CY";*/
 /*  src: local('AvertaDemoPE-ExtraBold.otf');*/
 /*}*/
+
+.plugin .chrome svg {
+    width: 20px;
+}
