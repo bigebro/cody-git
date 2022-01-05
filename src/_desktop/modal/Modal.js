@@ -1,13 +1,15 @@
-import React, { useRef, useEffect } from 'react';
+import React, {useRef, useEffect} from 'react';
 import styled from 'styled-components';
-import { MdClose } from 'react-icons/md';
-import { useSpring, animated } from 'react-spring';
+import {MdClose} from 'react-icons/md';
+import {useSpring, animated} from 'react-spring';
+
 const Background = styled.div`
+top:0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.44);
   position: fixed;
-  display: flex;
+  display: flex; 
   justify-content: center;
   align-items: center;
   z-index: 16;
@@ -88,7 +90,7 @@ const CloseModalButton = styled(MdClose)`
   
 `;
 
-export const Modal = ({ showModal, setShowModal }) => {
+export const Modal = ({showModal, setShowModal}) => {
     const modalRef = useRef();
 
     const animation = useSpring({
@@ -96,7 +98,7 @@ export const Modal = ({ showModal, setShowModal }) => {
             duration: 250
         },
         opacity: showModal ? 1 : 0,
-        transform: showModal ? `translateY(-6%)` : `translateY(-20%)`
+        transform: showModal ? `translateY(1%)` : `translateY(-10%)`
     });
 
 
@@ -116,16 +118,15 @@ export const Modal = ({ showModal, setShowModal }) => {
     }, [showModal]);
 
 
-
     return (
         <>
             {showModal ? (
                 <Background onClick={closeModal} ref={modalRef}>
                     <animated.div style={animation}>
-                        <ModalWrapper showModal={showModal} >
+                        <ModalWrapper showModal={showModal}>
                             <ModalContent>
                                 <form action="#">
-                                    <input name="full_name" placeholder="Овог нэр" required type="text" ></input>
+                                    <input name="full_name" placeholder="Овог нэр" required type="text"></input>
                                     <input name="email" placeholder="И-мэйл" required type='text'></input>
                                     <input name="phone" placeholder="Утас" required type='text'></input>
                                     <input name="company" placeholder="Байгууллагын нэр" required type='text'></input>
