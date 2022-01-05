@@ -8,6 +8,7 @@ import Webinar from "./_desktop/components/Webinar";
 
 function App() {
   return (
+
      <BrowserRouter>
        <Routes>
          <Route path="/cody-git" element={<Home/>}/>
@@ -17,6 +18,7 @@ function App() {
      </BrowserRouter>
 
   )
+    
 }
 
 export default App;
