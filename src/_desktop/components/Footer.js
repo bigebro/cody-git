@@ -6,12 +6,9 @@ import background2 from "../image/background2.png"
 import background3 from "../image/background3.svg"
 import instagram from "../image/instagram.svg"
 import facebook from "../image/facebook.svg"
-import Career from "../components/Career"
-import Webinar from "../components/Webinar"
+
 import {
-    Routes,
-    Route,
-    Link, BrowserRouter
+    Link
 } from "react-router-dom";
 
 
@@ -305,41 +302,34 @@ function Footer() {
                                 </ul>
 
                             </div>
+
                             <div className="footer-col">
                                 <h4>БИДНИЙ ТУХАЙ</h4>
-                                <BrowserRouter>
-                                    <ul>
-                                        <li>
-                                            <a href="">Танилцуулга</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Үйлчилгээний төрөл</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Хамтрагч байгууллага</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Холбоо барих</a>
-                                        </li>
+                                <ul>
+                                    <li>
+                                        <a href="">Танилцуулга</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Үйлчилгээний төрөл</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Хамтрагч байгууллага</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Холбоо барих</a>
+                                    </li>
+                                    <li>
+                                        <Link to="/career">Ажлын байр</Link>
+                                    </li>
+                                    <li>
+                                        <Link to={"/webinar"}>Вэб үйлчилгээний сургалт</Link>
+                                    </li>
+                                </ul>
 
-                                        <li>
-                                            <Link to="/career">Ажлын байр</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/webinar">Вэб үйлчилгээний сургалт</Link>
-                                        </li>
-
-                                    </ul>
-                                    <Routes>
-                                        <Route path="/career" element={<Career/>}/>
-
-
-                                        <Route path="/webinar" element={<Webinar/>}/>
-
-
-                                    </Routes>
-                                </BrowserRouter>
                             </div>
+
+
+
                             <div className="footer-col">
                                 <h4>ХОЛБОО БАРИХ</h4>
                                 <ul>

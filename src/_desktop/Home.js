@@ -28,7 +28,6 @@ function  Home() {
                 pageId="331581003847973"
                 appId="613554456622921"
                 themeColor={'#8753F0'}
-                width:"4px"
             />,
 
             <Footer/>

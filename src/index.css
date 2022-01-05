@@ -16,6 +16,10 @@ code {
 
 }
 
+.body.plugin svg{
+    width: 40px;
+}
+
 /*@font-face {*/
 /*  font-family: "Averta CY";*/
 /*  src: local('AvertaDemoPE-ExtraBold.otf');*/
