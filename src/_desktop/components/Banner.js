@@ -164,9 +164,9 @@ function Banner() {
                     onSwiper={(swiper) => console.log(swiper)}
                     loop>
 
-                <SwiperSlide><img style={{"height": "100%", "width": "100%"}}
+                <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}}
                                   src={'https://cdn5.shoppy.mn/img/82130/0x0xwebp/banner03.jpg?h=2935d0aea8cdff34d20f429fcef48744910ed6a9 '}/></SwiperSlide>
-                <SwiperSlide><img style={{"height": "100%", "width": "100%"}}
+                <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}}
                                   src={'https://cdn5.shoppy.mn/img/82101/0x0xwebp/desktop-banner-1.jpg?h=2935d0aea8cdff34d20f429fcef48744910ed6a9'}/></SwiperSlide>
 
             </Swiper>
@@ -177,30 +177,30 @@ function Banner() {
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                     loop>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo1}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo2}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo3}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%",}} src={logo4}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo5}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo6}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo7}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo8}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo9}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo10}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo11}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo12}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo13}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo14}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo15}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo16}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo17}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo18}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo19}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo20}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo21}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo22}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo23}/></SwiperSlide>
-                    <SwiperSlide><img style={{"height": "100%", "width": "100%"}} src={logo24}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo1}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo2}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo3}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%",}} src={logo4}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo5}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo6}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo7}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo8}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo9}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo10}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo11}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo12}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo13}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo14}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo15}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo16}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo17}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo18}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo19}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo20}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo21}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo22}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo23}/></SwiperSlide>
+                    <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo24}/></SwiperSlide>
                 </Swiper>
             </div>
             <ContainerStyle>

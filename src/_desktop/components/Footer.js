@@ -1,4 +1,4 @@
-import React, {useRef} from "react"
+import React from "react"
 import styled from "styled-components";
 import email from "../image/email.svg"
 import background1 from "../image/background1.svg"
@@ -285,19 +285,19 @@ function Footer() {
                                 <h4> КОДИ ПЛАТФОРМ </h4>
                                 <ul>
                                     <li>
-                                        <a href="">Платформын тухай</a>
+                                        <a href="#">Платформын тухай</a>
                                     </li>
                                     <li>
-                                        <a href="">Шийдэл</a>
+                                        <a href="#">Шийдэл</a>
                                     </li>
                                     <li>
-                                        <a href="">Онцлог, боломжууд</a>
+                                        <a href="#">Онцлог, боломжууд</a>
                                     </li>
                                     <li>
-                                        <a href="">Бизнесийн төрөл</a>
+                                        <a href="#">Бизнесийн төрөл</a>
                                     </li>
                                     <li>
-                                        <a href="">Харилцагчид</a>
+                                        <a href="#">Харилцагчид</a>
                                     </li>
                                 </ul>
 
@@ -305,24 +305,25 @@ function Footer() {
 
                             <div className="footer-col">
                                 <h4>БИДНИЙ ТУХАЙ</h4>
+
                                 <ul>
                                     <li>
-                                        <a href="">Танилцуулга</a>
+                                        <a href="#">Танилцуулга</a>
                                     </li>
                                     <li>
-                                        <a href="">Үйлчилгээний төрөл</a>
+                                        <a href="#">Үйлчилгээний төрөл</a>
                                     </li>
                                     <li>
-                                        <a href="">Хамтрагч байгууллага</a>
+                                        <a href="#">Хамтрагч байгууллага</a>
                                     </li>
                                     <li>
-                                        <a href="">Холбоо барих</a>
+                                        <a href="#">Холбоо барих</a>
                                     </li>
                                     <li>
                                         <Link to="/career">Ажлын байр</Link>
                                     </li>
                                     <li>
-                                        <Link to={"/webinar"}>Вэб үйлчилгээний сургалт</Link>
+                                        <Link to="/webinar">Вэб үйлчилгээний сургалт</Link>
                                     </li>
                                 </ul>
 
@@ -334,10 +335,10 @@ function Footer() {
                                 <h4>ХОЛБОО БАРИХ</h4>
                                 <ul>
                                     <li>
-                                        <a href="">Утас: 7777-8977</a>
+                                        <a href="#">Утас: 7777-8977</a>
                                     </li>
                                     <li>
-                                        <a href="">Имэйл: info@cody.mn</a>
+                                        <a href="#">Имэйл: info@cody.mn</a>
                                     </li>
                                     <li>
                                         <a href="https://what3words.com/reforming.punchy.hired" target="_blank"

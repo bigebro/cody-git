@@ -28,7 +28,7 @@ import icon23 from '../image/icon-23.svg'
 import icon24 from '../image/icon-24.svg'
 import icon25 from '../image/icon-25.svg'
 import icon26 from '../image/icon-26.svg'
-import {Container} from "reactstrap";
+
 
 import {ModalFeatures} from '../modal/ModalFeatures'
 
@@ -364,9 +364,9 @@ const featuresC = [
     },
 
 
-]
+];
 
-let count = 0;
+
 
 function Features() {
     const [showModal, setShowModal] = useState(false);

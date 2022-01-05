@@ -27,7 +27,7 @@
     "web-vitals": "^1.0.1"
   },
   "peerDependencies": {
-    "react-spring": "^8.x"
+    "react-spring": "^8.0.27"
   },
   "scripts": {
     "predeploy": "npm run build",
