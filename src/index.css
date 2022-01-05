@@ -15,7 +15,7 @@ code {
     font-family: "Averta CY", Roboto, sans-serif;
 
 }
-body.plugin div svg {
+.plugin div svg {
     width:40px;
 }
 /*@font-face {*/
