@@ -25,13 +25,13 @@ function  Home() {
             <Solutions/>
             <Features/>
             <Industries/>
-            <MessengerChat
-                pageId="331581003847973"
-                appId="613554456622921"
-                themeColor={'#8753F0'}
-                style={{width:"20px"}}
-                width={'20px'}
-            />,
+            {/*<MessengerChat*/}
+            {/*    pageId="331581003847973"*/}
+            {/*    appId="613554456622921"*/}
+            {/*    themeColor={'#8753F0'}*/}
+            {/*    style={{width:"20px"}}*/}
+            {/*    width={'20px'}*/}
+            {/*/>,*/}
 
 
             <Footer/>
