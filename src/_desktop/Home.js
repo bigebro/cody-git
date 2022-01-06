@@ -30,6 +30,7 @@ function  Home() {
                 appId="613554456622921"
                 themeColor={'#8753F0'}
                 style={{width:"20px"}}
+                width={'20px'}
             />,
 
 

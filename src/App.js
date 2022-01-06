@@ -12,8 +12,8 @@ function App() {
      <BrowserRouter>
        <Routes>
          <Route path="/cody-git" element={<Home/>}/>
-         <Route path="career" element={<Career/>}/>
-         <Route path="webinar" element={<Webinar/>}/>
+         <Route path="/career" element={<Career/>}/>
+         <Route path="/webinar" element={<Webinar/>}/>
      </Routes>
      </BrowserRouter>
 
