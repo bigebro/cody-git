@@ -27,16 +27,7 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <div class="fmessengerBtn">
 
-    <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat" messenger_app_id="613554456622921"
-         page_id="331581003847973" theme_color="#8753F0" minimized="true">
-    </div>
-    </div>
     <script>
       var chatbox = document.getElementById('fb-customer-chat');
       chatbox.setAttribute("page_id", "331581003847973");
@@ -60,6 +51,17 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
+
+    <div class="fmessengerBtn">
+
+      <!-- Messenger Chat Plugin Code -->
+      <div id="fb-root"></div>
+
+      <!-- Your Chat Plugin code -->
+      <div id="fb-customer-chat" class="fb-customerchat" messenger_app_id="613554456622921"
+           page_id="331581003847973" theme_color="#8753F0" minimized="true">
+      </div>
+    </div>
   </body>
 
 </html>

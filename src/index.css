@@ -21,6 +21,6 @@ code {
 /*  src: local('AvertaDemoPE-ExtraBold.otf');*/
 /*}*/
 
-.plugin .chrome svg {
+#facebook .plugin svg {
     width: 20px;
 }
