@@ -24,6 +24,12 @@ code {
 
 
 .fb_dialog {
+    position: fixed !important;
+    bottom: 23px !important;
+    right: 10px !important;
+    top: unset !important;
+    background: none !important;
     transform: scale(0.7) !important;
-    width: 20px;
+    overflow: visible !important;
+
 }
