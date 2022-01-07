@@ -24,3 +24,8 @@ code {
 #facebook .plugin svg {
     width: 20px;
 }
+
+.fb_dialog {
+    transform: scale(0.7) !important;
+    width: 20px;
+}
