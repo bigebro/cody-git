@@ -21,9 +21,7 @@ code {
 /*  src: local('AvertaDemoPE-ExtraBold.otf');*/
 /*}*/
 
-#facebook .plugin svg {
-    width: 20px;
-}
+
 
 .fb_dialog {
     transform: scale(0.7) !important;
