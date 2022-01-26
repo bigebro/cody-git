@@ -1,12 +1,25 @@
 import React, {useState} from 'react';
+import {useMediaQuery} from "react-responsive";
+import {DeviceSize} from "../components/responsive/index";
 import styled from 'styled-components'
 import Image from './cody.svg'
 import 'typeface-roboto'
 import Heart from '../image/heart.svg'
 import {Modal} from '../modal/Modal'
+import Bars from "../image/hamburger.png";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Offcanvas from "react-bootstrap/Offcanvas";
+
+
+
+
+
+
 
 
 const ContainerComp = styled.div`
+    
+   
 
   .modal-content1 {
     border: none;
@@ -27,7 +40,9 @@ const ContainerComp = styled.div`
     align-items: center;
     box-shadow: rgb(0 0 0 / 25%) 0px 0px 20px;
     z-index: 10;
-
+  @media screen and (max-width: 992px) {
+     height: 56px;
+  }
     a {
       color: rgb(68, 68, 68);
       outline: none;
@@ -35,16 +50,44 @@ const ContainerComp = styled.div`
     }
 
     .container {
-      display: flex;
+    
+    .mobile {
+    width: 20px;
+    height: 17px;
+    padding: 0px;
+    z-index: 103;
+    position: relative;
+    right: -13px;
+    cursor: pointer;
+
+    }
+    
+          display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
       padding-left: 32px;
       padding-right: 32px;
       max-width: 100%;
+      
+    a img {
+        width: 150px;
+        
+  @media screen and (max-width: 992px) {
+     width: 105px;
+  }
 
+      }
+      
+      
+    .navigation-btn1 {
+       width: 1.42rem; 
+        height: 1.1rem;
+        cursor: pointer;
+         display:block;
+   } 
+   
       .navigation-links {
-
         button {
           font-family: "Averta CY", Roboto, sans-serif;
           font-style: normal;
@@ -133,48 +176,121 @@ const ContainerComp = styled.div`
   }
 
 
+
 `;
 
 
-function Header() {
-
+function OffCanvasHeader({name, ...props}) {
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     const [showModal, setShowModal] = useState(false);
+
 
     const openModal = () => {
         setShowModal(prev => !prev);
 
     };
-
-
+    const [visible, setVisible] = useState(false)
+    const isMobile = useMediaQuery({maxWidth: DeviceSize.mobile});
     return (
-        <ContainerComp>
-            <div className='navigation-bar'>
-                <div className="container">
-                    <a href="/"><img style={{"width": '150px', "height": '26.81px'}} src={Image}/>      <h6>Таны
-                        бизнесийг технологиор хөгжүүлнэ</h6></a>
+        < ContainerComp >
 
+        < div
+    className = 'navigation-bar' >
+        < div
+    className = "container" >
+        < a
+    href = "/" > < img
 
-                    <div className='navigation-links'>
-                        <button><a href="#cody">Коди Платформ</a></button>
-                        <button><a href="#solutions">Шийдэл</a></button>
-                        <button><a href="#features">Боломжууд</a></button>
-                        <button><a href="#">Харилцагч</a></button>
-                        <button><a href="#">Бидний тухай</a></button>
+    src = {Image}
+    />
+    {
+        !isMobile && < h6 > Таны
+        бизнесийг
+        технологиор
+        хөгжүүлнэ < /h6>}</
+        a >
 
-                        <button onClick={openModal} className="navigation-btn">Холбоо барих</button>
+        {
+        !isMobile &&
+        < div
+        className = 'navigation-links' >
+            < button > < a
+        href = "#cody" > Коди
+        Платформ < /a></
+        button >
+        < button > < a
+        href = "#solutions" > Шийдэл < /a></
+        button >
+        < button > < a
+        href = "#features" > Боломжууд < /a></
+        button >
+        < button > < a
+        href = "#" > Харилцагч < /a></
+        button >
+        < button > < a
+        href = "#" > Бидний
+        тухай < /a></
+        button >
 
-                    </div>
+        < button
+        onClick = {openModal}
+        className = "navigation-btn" > Холбоо
+        барих < /button>
 
-                </div>
+        < /div>
+    }
+        {
+            isMobile &&
+            <>
 
-            </div>
-            <div style={{height:'95px'}}> </div>
-            <Modal showModal={showModal} setShowModal={setShowModal}/>
-        </ContainerComp>
+            <img onClick={handleShow} className ="mobile" src={Bars}/>
+
+            <Offcanvas show={show} onHide={handleClose} {...props}>
+        <Offcanvas.Header closeButton>
+   
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+        Some text as placeholder. In real life you can have the elements you
+            have chosen. Like, text, images, lists, etc.
+        </Offcanvas.Body>
+        </Offcanvas>
+        </>
+        }
+
+    </div>
+
+    < /div>
+        < div
+        style = {
+        {
+            height:'95px'
+        }
+    }> <
+        /div>
+        < Modal
+        showModal = {showModal}
+        setShowModal = {setShowModal}
+        />
+
+        < /ContainerComp>
 
 
     )
 }
+
+
+function Header() {
+    return (
+        <>
+        {['end'].map((placement, idx) => (
+        <OffCanvasHeader key={idx} placement={placement} name={placement} />
+))}
+</>
+);
+}
+
 
 export default Header;
 
