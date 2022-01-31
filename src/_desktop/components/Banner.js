@@ -38,6 +38,215 @@ import img3 from '../image/CONVERSE10.webp'
 SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
 
 const ContainerStyle = styled.div`
+img {
+vertical-align: middle;
+    border-style: none;
+}
+h3{
+
+    font-style: normal;
+    font-family: "Averta CY", sans-serif;
+        display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.cody-container .swiper-container .body .meta {
+margin-bottom: 60px;
+
+         @media only screen and (max-width: 410px) {
+margin-right: 20px;
+    }
+
+    position: relative;
+  
+
+}
+
+.cody-container .swiper-container .body .meta .title {
+  
+    font-weight: 700;
+    margin-bottom: 20px;
+    
+     @media only screen and (max-width: 742px) {
+    font-size: 19px;
+        text-align: center;
+line-height: 25px;
+    margin-left: 160px;
+    margin-top: 40px;
+
+    }
+    
+         @media only screen and (max-width: 410px) {
+    font-size: 19px;
+  text-align: center;
+line-height: 25px;
+    margin-left: 90px;
+    margin-top: 40px;
+
+    }
+    
+      
+         @media only screen and (max-width: 354px) {
+    font-size: 19px;
+  text-align: center;
+line-height: 25px;
+    margin-left: 64px;
+    margin-top: 40px;
+
+    }
+    
+           @media only screen and (max-width: 294px) {
+    font-size: 19px;
+  text-align: center;
+line-height: 25px;
+    margin-left: 24px;
+    margin-top: 40px;
+
+    }
+  
+      @media only screen and (max-width: 50px) {
+    font-size: 12px;
+  text-align: center;
+        margin-right: 50px;
+    }
+  
+}
+.cody-container .swiper-container .body .meta .description {
+    color: rgb(30, 32, 48);
+
+    margin: 0px;
+       @media only screen and (max-width: 739px) {
+
+font-size: 15px;
+    line-height: 24px;
+    text-align: center
+
+    }
+    
+    
+}
+.cody-container  .body img {
+    width: 100%;
+
+}
+
+.cody-container .swiper-container .body {
+width: 100%;
+
+   @media only screen and (max-width: 757px) {
+
+  padding-left: 40px;
+
+    }
+
+img {
+   
+    margin-right: 60px;
+    @media only screen and (max-width: 760px) {
+    width: 90%;
+
+    }
+}
+
+
+
+    display: flex;
+    
+    align-items: center;
+  
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.swiper-slide {
+
+flex-shrink: 0;
+height: 100%;
+    position: relative;
+    width: 528px;
+    transition-duration: 0ms;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.swiper-container-fade .swiper-slide {
+    pointer-events: none;
+    transition-property: opacity;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+
+    position: relative;
+    transition-property: transform;
+}
+ 
+      .container {
+      width: 100%;
+
+    margin-right: auto;
+    margin-left: auto;
+      padding-left: 6px !important;
+    padding-right: 6px !important;
+      }
+      
+      
+.swiper-container-pointer-events {
+    touch-action: pan-y;
+}
+
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+ 
+}
+
+.swiper-wrapper {
+    transition-duration: 0ms;
+    transform: translate3d(0px, 0, 0);
+    position: relative;
+    width: 100%;
+
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+
+      
+  .cody-container { 
+  .body {
+     @media only screen and (max-width: 760px) {
+        flex-direction: column;
+     
+    }
+  
+  }
+    margin-top: 50px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    padding-bottom: 100px;
+    padding-top: 30px;
+    height: 100%;
+  }
+
+
+
+
+
+
   .cody-container {
     margin-top: 50px;
     width: 100%;
@@ -56,16 +265,19 @@ const ContainerStyle = styled.div`
 
   .d-flex {
     width: 700px;
-    height: 100%;
-    padding: 50px;
+        height: 100%;
     justify-content: center;
-    margin-top: 30px;
+    margin-left: 120px;
+ 
+    
   }
 
   .cody-section {
     background: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    
   }
 
   h3 {
@@ -84,23 +296,35 @@ const ContainerStyle = styled.div`
 
   .swiper-pagination-bullet {
     background: #EEEEEE;
-    width: 20px;
-    height: 20px;
+  width: 15px;
+    height: 15px;
     border-radius: 50%;
     opacity: 1;
+    
   }
 
   .swiper-pagination-bullet-active {
     background-color: #8855F1;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
+
   }
 
   .swiper-pagination {
-    margin-bottom: 70px;
-    margin-left: 39px;
-  }
+    margin-bottom: 35px;
+    margin-left: 76px;
+   
+      @media only screen and (max-width:1190px) {
+ margin-left: 160px;
+    }
+    
+    @media only screen and (max-width:759px) {
+    margin-left: 0px;
+    }
+ }
+
+
 `;
 
 const ContainerComp = styled.div`
@@ -155,6 +379,7 @@ const slides = [{
 
 
 function Banner() {
+
     return (
         <ContainerComp>
 
@@ -206,37 +431,29 @@ function Banner() {
             <ContainerStyle>
                 <Container>
                     <div id="cody" className="cody-container">
-                        <Row>
-                            <div className="cody-title"/>
-                            <Row>
-                                <Swiper spaceBetween={30} effect={'fade'}
-                                        loop
-                                        pagination={{
-                                            clickable: true,
 
-                                        }}
+                          <div id="container">
 
-                                >
+                                <Swiper spaceBetween={30} effect={'fade'} loop pagination={{clickable: true,}}>
                                     {
                                         slides.map((c) =>
-                                            <SwiperSlide>
-                                                <div className="cody-section">
-                                                    <div className="picture">
-                                                        <img className="pictureWrapper" src={c.image} alt="picture"/>
-                                                    </div>
-                                                    <div className="d-flex">
-                                                        <div className="title">
-                                                            <h3>{c.title}</h3>
-                                                            <p>{c.description}</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </SwiperSlide>
+                                        <div className="swiper-wrapper">
+                                        <SwiperSlide>
+
+                                        <div className="body">
+                                        <img src={c.image} alt="pic"/>
+                                        <div className ="meta">
+                                        <h3 className="title">{c.title}</h3>
+                                        <p className="description">{c.description}</p>
+                                        </div>
+                                        </div>
+
+                                        </SwiperSlide>
+                                        </div>
                                         )
-                                    }
+                                     }
                                 </Swiper>
-                            </Row>
-                        </Row>
+                </div>
                     </div>
                 </Container>
             </ContainerStyle>

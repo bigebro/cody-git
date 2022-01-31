@@ -34,23 +34,8 @@ code {
 
 }
 
-.offcanvas {
-    width: 88vw !important;
-    background-color: rgb(136, 85, 241) !important;
-    transition: all 200ms ease-in-out 0s !important;
-    position: fixed !important;
-    bottom: 0px !important;
-    top: 0px !important;
-    cursor: pointer!;
-    overflow: hidden;
 
-}
 
-.offcanvas-backdrop.show      {
-    cursor: pointer;
-    opacity: 0.3 !important;
-    transition: all 200ms ease-in-out 0s !important;
-}
 
 .btn-close {
 filter: brightness(0) invert(1) opacity(4);

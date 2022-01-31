@@ -28,7 +28,7 @@ import icon23 from "../image/icon-23.svg";
 import icon24 from "../image/icon-24.svg";
 import icon25 from "../image/icon-25.svg";
 import icon26 from "../image/icon-26.svg";
-
+import features from "../image/features.svg"
 
 const Icons = {
     icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8, icon9, icon10, icon11, icon12, icon13, icon14,
@@ -256,6 +256,10 @@ const Featured = styled.div`
     font-family: "Averta CY", sans-serif;
     display: flex;
     flex-direction: column;
+    
+      @media only screen and (max-width: 768px) {
+font-size: 14px;
+    }
   }
 
   h5:before {
@@ -271,16 +275,37 @@ const Featured = styled.div`
     display: inline-block;
     margin-bottom: 20px;
     
+    @media only screen and (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+    background-size: 20px;
+    }
+    
   }
 
 
 
   .con-1 {
     height: 230px;
+
     padding: 25px;
     border-radius: 23px;
     background-color: rgb(255, 255, 255);
     position: relative;
+    @media only screen and (max-width:768px) {
+   height: 170px;
+    padding: 14px;
+    border-radius: 12px;
+    width: 115px;
+    }
+        @media only screen and (max-width:750px) {
+   height: 170px;
+    padding: 14px;
+    border-radius: 12px;
+    width: 200px;
+    }
+    
+    
     span {
       width: 75%;
       font-size: 14px;
@@ -318,17 +343,92 @@ const ModalWrap =  styled(Modal)`
   text-align: center;
   font-size: 28px;
   width: fit-content;
-  margin: auto;
 
-  :after {
-    content: "";
-    width: 40%;
-    border-radius: 10px;
-    margin: 14px auto;
-    height: 3px;
-    background-color: rgb(81, 5, 225);
-    display: block;
+  margin-bottom: 74px;
+  
+  @media only screen and (min-width: 991px) {
+   margin-left: 254px;
   }
+  
+   @media only screen and (max-width: 1199px) {
+   margin-left: 114px;
+  }
+  
+  
+  @media only screen and (max-width:750px) {
+    :after {
+      width: 81px;
+      height: 30px;
+      content: "";
+      display: block;
+      background-image: url(${features});
+      background-size: contain;
+      background-position: right bottom ;
+      align-self: flex-end;
+      margin-bottom: -24px;
+      margin-left: 150px;
+      background-repeat: no-repeat;
+    }
+  }
+  
+
+  
+  
+    @media only screen and (min-width:751px) {   
+      :before {
+      width: 81px;
+      height: 30px;
+      content: "";
+      display: block;
+      background-image: url(${features});
+      background-size: contain;
+      background-position: right bottom ;
+      align-self: flex-end;
+      margin-bottom: -4px;
+      margin-left: 389px;
+      background-repeat: no-repeat;
+    }}
+ 
+     @media only screen and (max-width:700px) {   
+      :before {
+      width: 81px;
+      height: 30px;
+      content: "";
+      display: block;
+      background-image: url(${features});
+      background-size: contain;
+      background-position: right bottom ;
+      align-self: flex-end;
+      margin-bottom: 0;
+      margin-left: 239px;
+      background-repeat: no-repeat;
+ 
+    }
+         :after {
+      content: none;
+      }
+      
+    }
+ 
+  
+  @media only screen and (max-width:991px) {
+margin-left:-81px;;
+  }
+  
+  @media only screen and (max-width:750px) {
+  text-transform: uppercase;
+ margin-left: 19px;
+  }
+  
+  @media only screen and (max-width:700px) {
+    font-size: 16px;
+ margin-left: 22px;
+  margin-bottom: 24px;
+  }
+
+
+
+
 }
   
   border-radius: 20px;
@@ -339,22 +439,24 @@ const ModalWrap =  styled(Modal)`
     .features{
       gap: 30px;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       overflow-y: auto;
       max-height: 700px;
-      padding: 30px 40px;
       background-color: rgb(246, 246, 246);
       border: none;
+    margin: -20px -25px -20px -20px;
+      @media only screen and (max-width:750px) {
+      grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0px;
+    max-height: 550px;
+    margin: 0px;
+      }
       
     }
 
 
-  .scroll {
-    max-height: 650px;
-    overflow: hidden auto;
-    margin-right: -23px;
-
-  }
+  
 
   .scroll::-webkit-scrollbar {
     width: 4px;

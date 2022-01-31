@@ -6,10 +6,11 @@ import background2 from "../image/background2.png"
 import background3 from "../image/background3.svg"
 import instagram from "../image/instagram.svg"
 import facebook from "../image/facebook.svg"
-
+import {DeviceSize} from "../components/responsive/index";
 import {
     Link
 } from "react-router-dom";
+import {useMediaQuery} from "react-responsive";
 
 
 const ContainerStyle = styled.div`
@@ -18,6 +19,7 @@ const ContainerStyle = styled.div`
     background-color: rgb(250, 252, 255);
     box-shadow: none;
     padding-top: 120px;
+
 
     .subscription {
       width: 800px;
@@ -260,11 +262,12 @@ const ContainerStyle = styled.div`
 `;
 
 function Footer() {
-
+    const isMobile = useMediaQuery({maxWidth: DeviceSize.mobile});
 
     return (
 
         <ContainerStyle>
+        {!isMobile &&
             <div id="footer">
                 <div className="subscription">
                     <h4>
@@ -537,6 +540,7 @@ function Footer() {
                 </div>
 
             </div>
+        }
         </ContainerStyle>
 
     );

@@ -390,6 +390,10 @@ ol, ul {
 
 .industry-menus  {
     padding-left: 0.4rem;
+    
+    @media only screen and (max-width:992px) {
+    display:none;
+    }
 }
 `;
 

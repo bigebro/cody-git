@@ -2,6 +2,7 @@ import React, {useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import {MdClose} from 'react-icons/md';
 import {useSpring, animated} from 'react-spring';
+import solutions from '../image/Solutions.svg'
 
 const Background = styled.div`
   width: 100%;
@@ -31,7 +32,22 @@ const ModalWrapper = styled.div`
   border: none;
   width: 1140px;
   margin-top: 320px;
+  @media only screen and (max-width:1199px) {
+  width: 800px;
+    }
+      @media only screen and (max-width:991px) {
+  width: 500px;
+ 
+  overflow:auto;
+  
+    }
+    
+         @media only screen and (max-width:750px) {
+  width: 530px;
+ 
+    }
 
+    
 
 `;
 
@@ -56,27 +72,44 @@ const ModalContent = styled.div`
 
 
   }
-  .scroll {
-    max-height: 650px;
-    overflow: hidden auto;
-    
+  
+       @media only screen and (max-width:750px) {
+  width: 560px;
+ 
+    }
 
+
+
+  .scroll {
+
+     @media only screen and (max-width:991px) {
+      
+    overflow-x: hidden auto;
+       max-width:420px;
+
+   
+  
+  
+  
+    }
   }
 
   .scroll::-webkit-scrollbar {
     width: 4px;
+
   }
 
   .scroll::-webkit-scrollbar-track {
     border-radius: 10px;
     box-shadow: rgb(206 207 215) 0px 0px 4px inset;
-
+    
   }
 
   .scroll::-webkit-scrollbar-thumb {
     height: 5px;
     border-radius: 100px;
     background-color: rgb(136, 85, 241);
+     
   }
   
   
@@ -89,6 +122,21 @@ const ModalContent = styled.div`
     margin-right: -23px;
     padding-right: 23px;
     
+        @media only screen and (max-width:750px) {
+  overflow:hidden;
+   grid-template-columns: repeat(1, 1fr);
+   h5 {
+      font-size: 16px;
+    margin-bottom: 9px;
+   }
+  p {
+   font-size: 14px;
+    margin-bottom: -30px;
+   }
+     }
+
+    
+    
   }
 
   .container-modal {
@@ -99,7 +147,9 @@ const ModalContent = styled.div`
     pointer-events: auto;
     background-clip: padding-box;
     outline: 0;
-  }
+
+
+    }
 
   .solution-title {
     color: rgb(30, 32, 48);
@@ -109,18 +159,35 @@ const ModalContent = styled.div`
     font-size: 28px;
     width: fit-content;
     margin: auto;
-    margin-bottom:15px;
+    margin-bottom:40px;
+    margin-top:20px;
+    
+     @media only screen and (max-width:750px) {
+     text-transform: uppercase; 
+       }
+ 
+    
+      @media only screen and (max-width:700px) {
+       
+       font-size: 16px;
+    
+    
 
-    :after {
-      content: "";
-      width: 40%;
-      border-radius: 10px;
-      margin: 14px auto;
-      height: 3px;
-      background-color: rgb(81, 5, 225);
-      display: block;
-    }
   }
+  
+    :after {
+       filter: invert(21%) sepia(79%) saturate(125%) hue-rotate(22deg) brightness(119%) contrast(24%);
+      fill: #d9534f;
+      background-image: url(${solutions});
+      content: "";
+      display: inline-block;
+      background-size: contain;
+      margin-bottom: 10px;
+      width: 84px;
+      height: 30px;
+       background-repeat: no-repeat;
+    }
+
 
   form {
     margin-top: 40px;
@@ -187,7 +254,7 @@ export const ModalSolutions = ({showModal, setShowModal}) => {
             duration: 300
         },
         opacity: showModal ? 1 : 0,
-        transform: showModal ? `translateY(-6%)` : `translateY(-12%)`
+        transform: showModal ? `translateY(-1.5%)` : `translateY(-12%)`
     });
 
 

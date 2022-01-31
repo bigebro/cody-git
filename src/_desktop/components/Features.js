@@ -40,6 +40,82 @@ const Icons = {
 }
 
 const ContainerStyle = styled.div`
+    
+ .swiper-section {
+     margin-bottom: 65px;
+ 
+ }
+ 
+ .container {
+     width: 100%;
+     margin-bottom: 65px;
+     margin-right: auto;
+    margin-left: auto;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    
+    @media (max-width: 990px) {
+    width:600px;
+    
+    }
+
+   @media (max-width: 767px) {
+    width:420px;
+    
+    }
+    
+   @media (max-width: 639px) {
+    width:520px;
+    margin-left:115px;
+    }
+    
+
+}
+
+
+ 
+ 
+ .swiper-container {
+   margin-left: -68px;
+    margin-right: -68px;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    z-index: 1;
+    padding: 20px 0px;
+    
+    
+ }
+ 
+ .swiper-container-multirow > .swiper-wrapper {
+     width: 3133px;
+    transition-duration: 0ms;
+    transform: translate3d(-2169px
+px
+, 0px, 0px);
+    flex-wrap: wrap;
+ 
+ }
+ 
+ .swiper-wrapper {
+ position: relative;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+ }
+ 
+ .swiper-slide {
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    width: 226px;
+    margin-right: 15px;
+}
+ 
+
   .features-title {
     width: fit-content;
     display: flex;
@@ -73,7 +149,7 @@ const ContainerStyle = styled.div`
   #features {
     padding: 60px 0px;
     background-color: rgb(241, 243, 255);
-    max-width: 100%;
+
   }
 
   
@@ -89,6 +165,16 @@ const ContainerStyle = styled.div`
     position: absolute;
     bottom: 20px;
     right: 24px;
+    
+    @media (max-width: 768px) {
+    width: 100%;
+    font-size: 11px;
+    text-align: right;
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    }
+    
   }
 
   .con-1 {
@@ -97,6 +183,13 @@ const ContainerStyle = styled.div`
     border-radius: 23px;
     background-color: rgb(255, 255, 255);
     position: relative;
+    
+    @media (max-width: 768px) {
+    height: 170px;
+    padding: 14px;
+    border-radius: 12px;
+    }
+    
   }
   
 
@@ -147,6 +240,10 @@ const Featured = styled.div`
     font-family: "Averta CY", sans-serif;
     display: flex;
     flex-direction: column;
+    
+    @media (max-width:768px) {
+    font-size:14px;
+    }
   }
 
   h5:before {
@@ -161,16 +258,14 @@ const Featured = styled.div`
     background-size: 25px;
     display: inline-block;
     margin-bottom: 20px;
+    
+    @media (max-width:768px) {
+    width: 40px;
+    height: 40px;
+    background-size: 20px;
+    }
   }
     
-  .swiper-container {
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    z-index: 1;
-    margin-left: 60px;
-    margin-bottom: 60px ;
-  }
 
   
 
@@ -383,33 +478,98 @@ function Features() {
                     <h1 className="features-title">
                         Системийн боломжууд
                     </h1>
+    <div className="swiper-section container">
                     <Swiper spaceBetween={0}
-                            slidesPerView={5.15}
+                            slidesPerView={5}
                             onSlideChange={() => console.log('slide change')}
                             onSwiper={(swiper) => console.log(swiper)}
                             slidesPerColumnFill={"row"}
                             slidesPerColumn={2}
                             autoplay={{ delay: 4000 }}
+    breakpoints={{
+        1024: {
+            slidesPerView: 5,
+                slidesPerGroup: 4,
+                slidesPerColumn:2,
+                spaceBetween:40,
+        },
+        990: {
+                slidesPerGroup: 3,
+                slidesPerColumn: 2,
+                slidesPerView: 3,
+                spaceBetween: 15,
 
+
+        },
+
+        768: {
+            slidesPerGroup: 3,
+                slidesPerColumn: 2,
+                slidesPerView: 3,
+                spaceBetween: 15,
+
+
+        },
+
+        767: {
+            slidesPerGroup: 3,
+                slidesPerColumn: 2,
+                slidesPerView: 3,
+                spaceBetween: 15,
+
+
+        },
+
+        640: {
+            slidesPerGroup: 3,
+                slidesPerColumn: 2,
+                slidesPerView: 3,
+                spaceBetween: 15,
+
+
+        },
+
+        639: {
+            slidesPerGroup: 3,
+                slidesPerColumn: 1,
+                slidesPerView: 3,
+
+
+        },
+
+        54: {
+            slidesPerGroup: 3,
+                slidesPerColumn: 1,
+                slidesPerView: 3,
+
+
+        },
+
+    }}
 
 
                     >
                         {featuresC.map((v) => {
                             return (
+
+                                <div className="swiper-container swiper-container-multirow">
                                 <SwiperSlide key={v.id}>
                                     <Featured icon={v.icon} color={v.color}>
 
-                                            <div className="swiper-container">
-                                                    <div className="con-1">
+
+                                                        <div className="con-1">
                                                         <h5>{v.title}</h5>
                                                         <span>{v.subTitle}</span>
-                                            </div>
-                                            </div>
+                                                        </div>
+
                                     </Featured>
                                 </SwiperSlide>
+                                </div>
+
                             )
                         })}
                     </Swiper>
+    </div>
 
 
                 <button onClick={openModal} type="button" className="button">

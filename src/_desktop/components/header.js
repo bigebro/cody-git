@@ -6,15 +6,8 @@ import Image from './cody.svg'
 import 'typeface-roboto'
 import Heart from '../image/heart.svg'
 import {Modal} from '../modal/Modal'
-import Bars from "../image/hamburger.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Offcanvas from "react-bootstrap/Offcanvas";
-
-
-
-
-
-
+import DrawerToggleButton from "./SideDrawer/DrawerToggleButton";
 
 
 const ContainerComp = styled.div`
@@ -40,9 +33,14 @@ const ContainerComp = styled.div`
     align-items: center;
     box-shadow: rgb(0 0 0 / 25%) 0px 0px 20px;
     z-index: 10;
-  @media screen and (max-width: 992px) {
-     height: 56px;
+           @media only screen and (max-width:1206px) {
+            height: 132px;
   }
+  @media only screen and (max-width: 992px) {
+     height: 56px;
+
+  }
+
     a {
       color: rgb(68, 68, 68);
       outline: none;
@@ -66,14 +64,19 @@ const ContainerComp = styled.div`
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      padding-left: 32px;
-      padding-right: 32px;
+      padding-left: 39px;
+      padding-right: 39px;
       max-width: 100%;
+      
+       @media only screen and (max-width: 993px) {
+        padding-left: 19px;
+      padding-right: 19px;
+       }
       
     a img {
         width: 150px;
         
-  @media screen and (max-width: 992px) {
+  @media only screen and (max-width: 992px) {
      width: 105px;
   }
 
@@ -95,7 +98,7 @@ const ContainerComp = styled.div`
           font-size: 15px;
           line-height: 1.2;
           color: rgb(30, 32, 48);
-          margin: 0px 25px;
+          margin: 0px 22px;
           transition: all 0.2s ease-in-out 0s;
           background: white;
           border: none;
@@ -180,18 +183,16 @@ const ContainerComp = styled.div`
 `;
 
 
-function OffCanvasHeader({name, ...props}) {
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-    const [showModal, setShowModal] = useState(false);
+const Header = props => {
 
+    const [showModal, setShowModal] = useState(false);
+    const {show, onHide} = props;
 
     const openModal = () => {
         setShowModal(prev => !prev);
 
     };
-    const [visible, setVisible] = useState(false)
+
     const isMobile = useMediaQuery({maxWidth: DeviceSize.mobile});
     return (
         < ContainerComp >
@@ -209,8 +210,9 @@ function OffCanvasHeader({name, ...props}) {
         !isMobile && < h6 > Таны
         бизнесийг
         технологиор
-        хөгжүүлнэ < /h6>}</
-        a >
+        хөгжүүлнэ </h6>
+    }
+        </a>
 
         {
         !isMobile &&
@@ -243,32 +245,34 @@ function OffCanvasHeader({name, ...props}) {
     }
         {
             isMobile &&
-            <>
+            <DrawerToggleButton
+            click = {props.drawerClickHandler}
+            show = {show}
+            onHide = {onHide}
+            />
 
-            <img onClick={handleShow} className ="mobile" src={Bars}/>
 
-            <Offcanvas show={show} onHide={handleClose} {...props}>
-        <Offcanvas.Header closeButton>
-   
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-        Some text as placeholder. In real life you can have the elements you
-            have chosen. Like, text, images, lists, etc.
-        </Offcanvas.Body>
-        </Offcanvas>
-        </>
+
         }
+
 
     </div>
 
-    < /div>
-        < div
-        style = {
+        < /div>
+    {isMobile &&
+    < div style = {
+        {
+            height:'55px'
+        }}>
+    </div>
+    }
+    {!isMobile &&
+    < div style = {
         {
             height:'95px'
-        }
-    }> <
-        /div>
+        }}>
+    </div>
+    }
         < Modal
         showModal = {showModal}
         setShowModal = {setShowModal}
@@ -278,17 +282,6 @@ function OffCanvasHeader({name, ...props}) {
 
 
     )
-}
-
-
-function Header() {
-    return (
-        <>
-        {['end'].map((placement, idx) => (
-        <OffCanvasHeader key={idx} placement={placement} name={placement} />
-))}
-</>
-);
 }
 
 

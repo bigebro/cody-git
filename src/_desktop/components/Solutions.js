@@ -45,6 +45,10 @@ const ContainerStyle = styled.div`
     margin-top: 6%;
     margin-bottom: 7%;
     justify-items: center;
+    
+    @media only screen and (max-width: 750px){
+       grid-template-columns: repeat(1, 1fr);
+    }
   }
 
 
@@ -115,49 +119,49 @@ function Solutions() {
 
         <div id="solutions">
 
-            <ContainerStyle>
-                <ModalSolutions showModal={showModal} setShowModal={setShowModal}/>
-                <div className="container">
-                    <h1 className="solutions-title">
-                        Бидний шийдэл
-                    </h1>
-                    <div className="content">
-                        <div className="container-content">
-                            <h5>Headless Ecommerce</h5>
-                            <p>Headless цахим худалдааны шийдлээр бизнесийн онцлогтоо тохирох цахим худалдааг бүтээж
-                                ирээдүйтэй бэлтгэ</p>
-                        </div>
-                        <div className="container-content">
-                            <h5>Multi Store</h5>
-                            <p>Ашиглахад хялбар, салбар бизнесүүдийнхээ сүлжээг бий болгож удирдах</p>
-                        </div>
-                        <div className="container-content">
-                            <h5>Market Place</h5>
-                            <p>Бизнесийн загвартай тохируулан олон төрлийн борлуулагчдын зах зээлийг бий болгох
-                                боломжтой</p>
-                        </div>
+        <ContainerStyle>
+        <ModalSolutions showModal={showModal} setShowModal={setShowModal}/>
+    <div className="container">
+        <h1 className="solutions-title">
+        Бидний шийдэл
+    </h1>
+    <div className="content">
+        <div className="container-content">
+        <h5>Headless Ecommerce</h5>
+    <p>Headless цахим худалдааны шийдлээр бизнесийн онцлогтоо тохирох цахим худалдааг бүтээж
+    ирээдүйтэй бэлтгэ</p>
+    </div>
+    <div className="container-content">
+        <h5>Multi Store</h5>
+    <p>Ашиглахад хялбар, салбар бизнесүүдийнхээ сүлжээг бий болгож удирдах</p>
+    </div>
+    <div className="container-content">
+        <h5>Market Place</h5>
+    <p>Бизнесийн загвартай тохируулан олон төрлийн борлуулагчдын зах зээлийг бий болгох
+    боломжтой</p>
+    </div>
 
-                        <div className="container-content">
-                            <h5>Media Platform</h5>
-                            <p>Медиа платформын тусламжтайгаар контент дээр суурьласан цахим худалдаагаа эхлүүлээрэй</p>
-                        </div>
-                    </div>
-                    <button onClick={openModal} type="button" className="button">
+    <div className="container-content">
+        <h5>Media Platform</h5>
+    <p>Медиа платформын тусламжтайгаар контент дээр суурьласан цахим худалдаагаа эхлүүлээрэй</p>
+    </div>
+    </div>
+    <button onClick={openModal} type="button" className="button">
 
-                        <span>
-                            Дэлгэрэнгүй
-                        </span>
+        <span>
+        Дэлгэрэнгүй
+        </span>
 
-                    </button>
-                </div>
-
-                <img src={ellipse}/>
-
-            </ContainerStyle>
-
+        </button>
         </div>
 
-    )
+        <img src={ellipse}/>
+
+    </ContainerStyle>
+
+    </div>
+
+)
 }
 
 
