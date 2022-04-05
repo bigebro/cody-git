@@ -23,8 +23,11 @@ code {
 
 
 
-.fb_dialog {
-    transition: all 0.5s ease-out 0s;
+
+
+@media only screen and (max-width: 992px) {
+    .fb_dialog {
+        transition: all 0.5s ease-out 0s;
     transform: scale(0.6) !important;
     display: block !important;
     position: fixed !important;
@@ -35,16 +38,6 @@ code {
     background: rgba(82, 82, 82, .7);
     overflow: visible !important;
     z-index: 10001;
-
-  
-        
-    
-
-}
-
-@media only screen and (min-width: 992px) {
-    .fb_dialog {
-        display:none;
     }
    
 }
