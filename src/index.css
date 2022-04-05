@@ -24,11 +24,11 @@ code {
 
 
 .fb_dialog {
-    z-index: 10001;
-    position: fixed;
+    position: fixed !important;
     bottom: 23px !important;
     right: 10px !important;
     top: unset !important;
+    background: none !important;
     transform: scale(0.7) !important;
     overflow: visible !important;
 
