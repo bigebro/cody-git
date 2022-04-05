@@ -69,50 +69,21 @@ SwiperCore.use([Autoplay])
 const ContainerStyle = styled.div`
 
 
+.mobile-responsive-button {
 
-.scroll .buttons button:not(:last-of-type) {
-  margin-bottom: 10px;
+  width: 100%;
+  text-align: right;
+  display: flex;
+  border: none;
+  align-items: center;
+  transition: all 0.2s ease-in-out 0s;
 }
 
-
-.industries-section .industries-menus {
-
-
-
-  @media (max-width: 991px){
-    margin: 0px auto;
-    min-height: unset;
+ .industries-swiper1 {
+  @nedia screen only and (max-width:991px) {
+  display: none;
   }
-
-  .buttons {
-    @media (max-width: 991px){
-      display: flex;
-      -webkit-box-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      justify-content: center;
-      margin-bottom: 20px;
-      margin-right: 0px;
-    }
-
-    button {
-      
-  @media (max-width: 991px){
-  
-    width: unset;
-    text-align: center;
-    margin-bottom: 0px;
-  }
-    }
-
-  }
-  
-}
-
- .industries-section .industries-menus .buttons button:not(.active) {
-  @media (max-width: 991px){   display: none;
-  }}
- 
+ }
 
   .ellipse-image {
     transform: rotate(180deg);
@@ -201,31 +172,113 @@ const ContainerStyle = styled.div`
   }
 
   .industries-section {
-    
-
     display: flex;
     align-self: center;
     -webkit-box-pack: justify;
     justify-content: space-between;
-  
-    @media (max-width: 991px) {
-      display:block;
-    }
-    
-    
-
   }
 
   .industries-menus {
     flex: 0 0 260px;
     min-height: 500px;
-    margin-right: 40px;
+   margin-right: 40px;
+
+   @media only screen and (max-width: 991px) {
+     flex: 0 0 72px;
+    min-height: 500px;
+
+   }
+
+   @media only screen and (max-width: 912px) {
+    flex: 0 0 42px;
+   min-height: 500px;
 
   }
 
+  @media only screen and (max-width: 848px) {
+    flex: 0 0 0;
+   min-height: 500px;
+
+  }
+  
+  @media only screen and (max-width: 811px) {
+    flex: 0 0 0;
+   min-height: 500px;
+    margin-right: 10px;
+  }
+
+
+
+  @media only screen and (max-width: 795px) {
+    flex: 0 0 0;
+   min-height: 500px;
+    margin-right: 10px;
+  }
+
+  @media only screen and (max-width: 793px) {
+    flex: 0 0 0;
+   min-height: 500px;
+    margin-right: 10px;
+  }
+
+
+
+  @media only screen and (max-width: 783px) {
+    flex: 0 0 0;
+   min-height: 500px;
+   margin-right:40px;
+  }
+
+  @media only screen and (max-width: 778px) {
+    flex: 0 0 0;
+   min-height: 500px;
+   margin-right:10px;
+  }
+
+  
+  
+
+
+
+  
+  @media only screen and (max-width: 768px) {
+    flex: 0 0 80px;
+   min-height: 500px;
+   margin-right: 0;
+  }
+
+  @media only screen and (max-width: 706px) {
+    flex: 0 0 20px;
+   min-height: 500px;
+  }
+
+
+  @media only screen and (max-width: 626px) {
+    flex: 0 0 30px;
+   min-height: 500px;
+  }
+  @media only screen and (max-width: 616px) {
+    flex: 0 0 10px;
+   min-height: 500px;
+  }
+  @media only screen and (max-width: 600px) {
+    flex: 0 0 65px;
+   min-height: 500px;
+
+  }
+
+  @media only screen and (max-width: 571px) {
+    flex: 0 0 15px;
+    min-height: 500px;
+
+      }
+  }
+
+
+
   .scroll {
     max-height: 650px;
-    margin-left: -15px;
+    margin-left: 15px;
     overflow: hidden auto;
     transform: rotateY(180deg);
 
@@ -249,9 +302,9 @@ const ContainerStyle = styled.div`
 }
 
 .buttons {
-  margin-right: 15px;
+  margin-right: 5px;
   transform: rotateY(180deg);
-  
+  margin-bottom: 10px;
 }
 
 .buttons button {
@@ -312,6 +365,13 @@ const ContainerStyle = styled.div`
 .buttons button:hover span.icon {
   background-color: rgb(245, 246, 249);
   transition: all 0.2s ease-in-out 0s;
+}
+
+.industry-section {
+  display: flex;
+    align-self: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
 }
 
 // .button button.active  span.icon:after {
@@ -391,7 +451,6 @@ const ContainerStyle = styled.div`
   display: flex;
   transition-property: transform;
   box-sizing: content-box;
-
 }
 
 .industry {
@@ -426,6 +485,12 @@ const ContainerStyle = styled.div`
   justify-content: center;
 }
 
+.swiper-slide {
+  padding-bottom: 30px;
+  background-color: rgb(241, 243, 255);
+
+}
+
 .swiper-button-prev {
   background-image: url(${leftArrow});
   background-repeat: no-repeat;
@@ -450,16 +515,21 @@ const ContainerStyle = styled.div`
 
 
 .swiper-slide {
+  width: 703px;
+  border-style: none;
+  @media only screen and (max-width: 768px) {
+ width: 525px;
 
-  
-    width: 801px;
-    margin-right: 20px;
-  img {
-    width: 100%;
-    vertical-align: middle;
-    border-style: none;
   }
 
+  @media only screen and (max-width: 600px) {
+width: 100%;
+
+  }
+
+
+    
+  
 }
 
 ol, ul {
@@ -468,23 +538,40 @@ ol, ul {
 
 }
 
+.industry-menus  {
+    padding-left: 0.4rem;
+    
+    @media only screen and (max-width:991px) {
+    display:none;
+    }
+}
+
+
+}
+
+swiper-slide1 {
+ @media only screen (max-width:991px) {
+    display:none;
+    }
+}
+
+
 
 
 `;
+
 const ReImages = [
 
-  {ReImage: R1, icon: tech, title: 'Технологи',id: 1,},  {ReImage: R2, id: 2,}, {ReImage: R3, id: 3,}, {ReImage: R4, id: 4,}, {ReImage: R5, id: 5,} ,
-  {ReImage: R6, id: 6,}, {ReImage: R7, id: 7,}, {ReImage: R8, id: 8,}, {ReImage: R9, id: 9,}
-, {ReImage: R10, id: 10,}, {ReImage: R11, id: 11,}, {ReImage: R12, id: 12,}, {ReImage: R13, id: 13,},
-{ReImage: R14, id: 14,}, {ReImage: R15, id: 15,}, {ReImage: R16, id: 16,}, {ReImage: R17, id: 17,}
-
+    {ReImage: R1, icon: tech, title: 'Технологи',id: 1,},  {ReImage: R2, id: 2,}, {ReImage: R3, id: 3,}, {ReImage: R4, id: 4,}, {ReImage: R5, id: 5,} ,
+    {ReImage: R6, id: 6,}, {ReImage: R7, id: 7,}, {ReImage: R8, id: 8,}, {ReImage: R9, id: 9,}
+  , {ReImage: R10, id: 10,}, {ReImage: R11, id: 11,}, {ReImage: R12, id: 12,}, {ReImage: R13, id: 13,},
+  {ReImage: R14, id: 14,}, {ReImage: R15, id: 15,}, {ReImage: R16, id: 16,}, {ReImage: R17, id: 17,}
+, {ReImage: R17, id: 17,}
 
 
 
 
 ];
-
-
 
 
 const Images = [
@@ -529,7 +616,9 @@ function Industries() {
 
         const [index, setIndex] = React.useState(0);
     const [swiper, setSwiper] = React.useState(null);
+
     const isMobile = useMediaQuery({maxWidth: DeviceSize.mobile});
+
     return (<ContainerStyle>
 
         <div id="industries">
@@ -544,10 +633,10 @@ function Industries() {
                         {/*menu-section*/}
                         <div className="scroll industries-menus">
                             <div className="buttons">
-                              
+                                <ul className="industry-menus">
                                     {Icons.map((item, i) => {
                                         const isCurrent = swiper ? swiper.realIndex ===i:false;
-                                        return(
+                                        return( 
                                             <button
                                                 className={` ${index === i ? 'active' : ''}`}
                                                 onClick={() => swiper ? swiper.slideTo(i+1) : false}>
@@ -557,45 +646,50 @@ function Industries() {
                                             </button>
                                         )
                                     })}
-                                
+                                </ul>
                             </div>
                         </div>
                         {/*swiper-section*/}
-                        {!isMobile &&
-                        <div className="industry industries-swiper">
-                            <div className="box-shadow">
-                           
+      {  !isMobile && 
+    <div className=" industries-swiper1">
+        <div className="box-shadow">
+        <div className="swiper-container">
+        <div className="swiper-wrapper">
 
-
-                                        <Swiper
-                                            onSlideChange={(e) => setIndex(e.realIndex)}
-                                            onMouseEnter={() => swiper && swiper.autoplay.stop()}
-                                            onMouseLeave={() => swiper && swiper.autoplay.start()}
-                                            spaceBetween={30}
-                                            slidesPerView={1}
-                                            navigation
-                                            onSwiper={(s)=>{
-                                                setSwiper(s);
-                                                setIndex(0);
-                                            }}
-                                            loop
-                                            autoplay={{ delay: 4500 }}
-                                        >
-                                            {Images.map((c, idx) => {
-                                                return (
-                                                    <SwiperSlide><img src={c.image}
-                                                                      alt="industry-slide"/>
-                                                    </SwiperSlide>
-                                                )
-                                            })}
-                                        </Swiper>
-                              
-                            </div>
-                        </div>
+        <Swiper
+    onSlideChange={(e) => setIndex(e.realIndex)}
+    onMouseEnter={() => swiper && swiper.autoplay.stop()}
+    onMouseLeave={() => swiper && swiper.autoplay.start()}
+    spaceBetween={30}
+    slidesPerView={1}
+    navigation
+    onSwiper={(s)=>{
+        setSwiper(s);
+        setIndex(0);
+    }}
+    loop
+    autoplay={{ delay: 4500 }}
+>
+    {Images.map((c, idx) => {
+        return (
+            <SwiperSlide><img className="swiper-slide1" src={c.image}
+        alt="industry-slide"/>
+            </SwiperSlide>
+    )
+    })}
+</Swiper>
+    </div>
+    </div>
+    </div>
+    </div>
 }
-{isMobile &&
-                        <div className="industry industries-swiper">
+{  isMobile && 
+
+  <div className="industry industries-swiper">
                             <div className="box-shadow">
+                                <div className="swiper-container">
+                                    <div className="swiper-wrapper">
+         
                                         <Swiper
                                             onSlideChange={(e) => setIndex(e.realIndex)}
                                             onMouseEnter={() => swiper && swiper.autoplay.stop()}
@@ -610,22 +704,36 @@ function Industries() {
                                             loop
                                             autoplay={{ delay: 4500 }}
                                         >
+
+
+
                                             {ReImages.map((c, idx) => {
                                                 return (
-                                                    <SwiperSlide><img src={c.ReImage}
+                                                    <SwiperSlide>
+                                                      <div className="mobile-responsive-button">
+                                                      <span className="icon"><img src={ c.icon}
+                                                                            alt=""/></span>
+                                                <span className="text">{c.title}</span>
+                                                      </div>
+                                       
+                                                      <img className="swiper-slide" src={c.ReImage}
                                                                       alt="industry-slide"/>
+                                                     
+
                                                     </SwiperSlide>
                                                 )
                                             })}
                                         </Swiper>
-                                  
+                                    </div>
+                                </div>
                             </div>
                         </div>
 }
+  
+
+
                     </div>
                 </div>
-                <div className="fb_dialog  fb_dialog_advanced" alignment="right" 
-                sdesktop_bottom_spacing="20"></div>
             </Container>
         </div>
     </ContainerStyle>)

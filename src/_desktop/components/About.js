@@ -1,22 +1,23 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import styled from 'styled-components'
-import Header from './components/header'
+import styled from "styled-components";
+import Header from '../components/header';
 import React, {Component} from 'react';
-import Banner from "./components/Banner";
-import Solutions from "./components/Solutions";
-import Features from "./components/Features";
-import Industries from "./components/Industries";
-import Footer from "./components/Footer";
-import '../index.css';
+import Footer from "../components/Footer";
+import AboutBody from '../components/AboutBody';
+
 // import MessengerChat from 'react-messenger-customer-chat';
 
 const ContainerComp = styled.div`
-
+@media (max-width: 992px) {
+    .element-to-hide {
+      display: none;
+    }
+  }
 
 `;
 
 
-class Home extends Component {
+class About extends Component {
     state = {
         sideDrawerOpen: false
     };
@@ -35,22 +36,16 @@ class Home extends Component {
 
 
     render() {
-        window.location.href.substr(0, window.location.href.indexOf('#'))
-
         return (
-            
-            < ContainerComp>
+            < ContainerComp >
             < Header
         drawerClickHandler = {this.drawerToggleClickHandler}
         show = {this.state.sideDrawerOpen}
         onHide = {this.backdropClickHandler}
         />
-        < Banner />
-        < Solutions />
-        < Features />
-        < Industries />
-
-        < Footer />
+        <AboutBody/>
+     
+        < Footer/>
 
         </ContainerComp>
 
@@ -60,4 +55,4 @@ class Home extends Component {
 
 }
 
-export default Home;
+export default About

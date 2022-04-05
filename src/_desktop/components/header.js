@@ -7,8 +7,11 @@ import 'typeface-roboto'
 import Heart from '../image/heart.svg'
 import {Modal} from '../modal/Modal'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavHashLink } from 'react-router-hash-link';
 import DrawerToggleButton from "./SideDrawer/DrawerToggleButton";
-
+import {
+  Link
+} from "react-router-dom";
 
 const ContainerComp = styled.div`
     
@@ -197,12 +200,11 @@ const Header = props => {
     return (
         < ContainerComp >
 
-        < div
-    className = 'navigation-bar' >
+        <div className = 'navigation-bar'>
         < div
     className = "container" >
         < a
-    href = "/" > < img
+    href = "/cody-git" > < img
 
     src = {Image}
     />
@@ -216,32 +218,29 @@ const Header = props => {
 
         {
         !isMobile &&
-        < div
-        className = 'navigation-links' >
-            < button > < a
-        href = "#cody" > Коди
-        Платформ < /a></
+        < div className = 'navigation-links' >
+            < button > < NavHashLink
+        to = "/cody-git#cody" > Коди
+        Платформ </NavHashLink></
+        button >
+        < button >  <NavHashLink
+        to = "/cody-git#solutions" > Шийдэл </NavHashLink></
+        button >
+        < button > <NavHashLink
+        to = "/cody-git#features" > Боломжууд </NavHashLink></
         button >
         < button > < a
-        href = "#solutions" > Шийдэл < /a></
+        href = "#" > Харилцагч </a></
         button >
         < button > < a
-        href = "#features" > Боломжууд < /a></
-        button >
-        < button > < a
-        href = "#" > Харилцагч < /a></
-        button >
-        < button > < a
-        href = "#" > Бидний
-        тухай < /a></
+        href = "/about" > Бидний
+        тухай </a></
         button >
 
-        < button
-        onClick = {openModal}
-        className = "navigation-btn" > Холбоо
-        барих < /button>
+        <button onClick = {openModal} className = "navigation-btn" > Холбоо
+        барих </button>
 
-        < /div>
+        </div>
     }
         {
             isMobile &&
@@ -258,7 +257,7 @@ const Header = props => {
 
     </div>
 
-        < /div>
+        </div>
     {isMobile &&
     < div style = {
         {
@@ -278,7 +277,7 @@ const Header = props => {
         setShowModal = {setShowModal}
         />
 
-        < /ContainerComp>
+        </ContainerComp>
 
 
     )

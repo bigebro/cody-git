@@ -381,12 +381,14 @@ const slides = [{
 function Banner() {
 
     return (
+      
         <ContainerComp>
 
             <Swiper spaceBetween={50}
                     slidesPerView={1}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
+                    autoplay={{ delay: 12500 }}
                     loop>
 
                 <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}}
@@ -401,6 +403,7 @@ function Banner() {
                     slidesPerView={14}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
+                    autoplay={{ delay: 7500 }}
                     loop>
                     <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo1}/></SwiperSlide>
                     <SwiperSlide><img alt="" style={{"height": "100%", "width": "100%"}} src={logo2}/></SwiperSlide>
@@ -429,8 +432,9 @@ function Banner() {
                 </Swiper>
             </div>
             <ContainerStyle>
+          
                 <Container>
-                    <div id="cody" className="cody-container">
+                <div id="cody" className="cody-container">
 
                           <div id="container">
 
@@ -454,8 +458,9 @@ function Banner() {
                                      }
                                 </Swiper>
                 </div>
-                    </div>
+                </div>
                 </Container>
+           
             </ContainerStyle>
 
 

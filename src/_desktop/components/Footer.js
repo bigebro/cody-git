@@ -11,6 +11,7 @@ import {
     Link
 } from "react-router-dom";
 import {useMediaQuery} from "react-responsive";
+import Webinar from "./Webinar";
 
 
 const ContainerStyle = styled.div`
@@ -311,25 +312,25 @@ function Footer() {
 
                                 <ul>
                                     <li>
-                                        <a href="#">Танилцуулга</a>
+                                    <a href="/about">Танилцуулга</a>
                                     </li>
                                     <li>
-                                        <a href="#">Үйлчилгээний төрөл</a>
+                                        <a href="/cody-git">Үйлчилгээний төрөл</a>
                                     </li>
                                     <li>
-                                        <a href="#">Хамтрагч байгууллага</a>
+                                        <a href="/cody-git">Хамтрагч байгууллага</a>
                                     </li>
                                     <li>
-                                        <a href="#">Холбоо барих</a>
+                                        <a href="/cody-git">Холбоо барих</a>
                                     </li>
                                     <li>
-                                        <Link to="/career">Ажлын байр</Link>
+                                        <a href="/career">Ажлын байр</a>
                                     </li>
                                     <li>
-                                        <Link to="/webinar">Вэб үйлчилгээний сургалт</Link>
+                                        <a href="/webinar">Вэб үйлчилгээний сургалт</a>
                                     </li>
                                 </ul>
-
+                        
                             </div>
 
 
