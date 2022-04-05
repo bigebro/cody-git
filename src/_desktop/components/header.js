@@ -233,7 +233,7 @@ const Header = props => {
         href = "#" > Харилцагч </a></
         button >
         < button > < a
-        href = "/about" > Бидний
+        href = "/cody-git/about" > Бидний
         тухай </a></
         button >
 

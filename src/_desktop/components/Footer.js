@@ -312,7 +312,7 @@ function Footer() {
 
                                 <ul>
                                     <li>
-                                    <a href="/about">Танилцуулга</a>
+                                    <a href="/cody-git/about">Танилцуулга</a>
                                     </li>
                                     <li>
                                         <a href="/cody-git">Үйлчилгээний төрөл</a>
@@ -324,10 +324,10 @@ function Footer() {
                                         <a href="/cody-git">Холбоо барих</a>
                                     </li>
                                     <li>
-                                        <a href="/career">Ажлын байр</a>
+                                        <a href="/cody-git/career">Ажлын байр</a>
                                     </li>
                                     <li>
-                                        <a href="/webinar">Вэб үйлчилгээний сургалт</a>
+                                        <a href="/cody-git/webinar">Вэб үйлчилгээний сургалт</a>
                                     </li>
                                 </ul>
                         
