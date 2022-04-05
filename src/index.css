@@ -36,6 +36,12 @@ code {
     overflow: visible !important;
     z-index: 10001;
 
+    @media (min-width: 992px) {
+        display:none;
+    }
+        
+    
+
 }
 
 .fb_dialog_advanced {
