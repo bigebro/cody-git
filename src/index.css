@@ -29,8 +29,8 @@ code {
     right: 10px !important;
     top: unset !important;
     transform: scale(0.7) !important;
-    overflow: visible !important;
-    background: none !important;
+   
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -43,6 +43,7 @@ code {
     right: -83px !important;
     left: 10px !important;
     top: unset !important;
+    background: rgba(82, 82, 82, .7);
     overflow: visible !important;
     z-index: 10001;
     }
