@@ -23,7 +23,7 @@ code {
 
 
 
-.fb_dialog {
+/* .fb_dialog {
     position: fixed !important;
     bottom: 23px !important;
     right: 10px !important;
@@ -32,7 +32,7 @@ code {
     transform: scale(0.7) !important;
     overflow: visible !important;
 
-}
+} */
 
 @media only screen and (max-width: 992px) {
     .fb_dialog {
@@ -40,9 +40,12 @@ code {
     transform: scale(0.6) !important;
     display: block !important;
     position: fixed !important;
+    bottom: 23px !important;
     right: -82px !important;
     left: 10px !important;
+    top: unset !important;
     background: rgba(82, 82, 82, .7);
+    overflow: visible !important;
     z-index: 10001;
     }
    
