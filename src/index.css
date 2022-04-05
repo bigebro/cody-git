@@ -22,7 +22,7 @@ code {
 /*}*/
 
 
-
+/* 
 .fb_dialog {
     position: fixed !important;
     bottom: 23px !important;
@@ -32,7 +32,7 @@ code {
     transform: scale(0.7) !important;
     overflow: visible !important;
 
-}
+} */
 
 @media only screen and (max-width: 992px) {
     .fb_dialog {
