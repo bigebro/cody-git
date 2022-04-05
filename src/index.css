@@ -24,17 +24,51 @@ code {
 
 
 .fb_dialog {
+    transition: all 0.5s ease-out 0s;
+    transform: scale(0.6) !important;
+    display: block !important;
     position: fixed !important;
     bottom: 23px !important;
-    right: 10px !important;
+    right: -82px !important;
+    left: 10px !important;
     top: unset !important;
-    background: none !important;
-    transform: scale(0.7) !important;
+    background: rgba(82, 82, 82, .7);
     overflow: visible !important;
+    z-index: 10001;
 
 }
 
+.fb_dialog_advanced {
+    border-radius: 8px;
+    padding: 10px;
+}
 
+.fb_reset {
+    background: none;
+    border: 0;
+    border-spacing: 0;
+    color: #000;
+    cursor: auto;
+    direction: ltr;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+    text-shadow: none;
+    text-transform: none;
+    visibility: visible;
+    white-space: normal;
+    word-spacing: normal;
+}
 
 
 .btn-close {
